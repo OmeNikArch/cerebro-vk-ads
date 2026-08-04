@@ -857,6 +857,7 @@
           <ul>
             <li>всё то же, что и на младшем тарифе</li>
             <li>масштабирование на города и площадки</li>
+            <li>при бюджете от 5 млн ₽/мес работа команды – бесплатно</li>
           </ul>
         </article>
       </div>
@@ -865,7 +866,7 @@
         <h3>Сколько это стоит целиком</h3>
         <p class="hint">Подвиньте ползунок – посчитаем полную сумму инвестиций в месяц: бюджет плюс работа команды.</p>
         <label for="calcRange">Рекламный бюджет в месяц: <b id="calcBudgetOut">150 000 ₽</b></label>
-        <input type="range" id="calcRange" min="50000" max="2000000" step="10000" value="150000" aria-describedby="calcTariff">
+        <input type="range" id="calcRange" min="50000" max="7000000" step="10000" value="150000" aria-describedby="calcTariff">
         <div class="calc-rows">
           <div class="calc-row"><span>Рекламный бюджет</span><b id="calcB">150 000 ₽</b></div>
           <div class="calc-row"><span>Работа команды <span class="calc-tariff" id="calcTariff">(15%, минимум 50 000 ₽)</span></span><b id="calcFee">50 000 ₽</b></div>
@@ -1148,12 +1149,21 @@
     const fmt = n => n.toLocaleString('ru-RU') + ' ₽';
     const upd = () => {
       const b = +calcRange.value;
-      const senior = b >= 500000;
-      const fee = senior ? Math.max(b * .05, 75000) : Math.max(b * .15, 50000);
+      let fee, tariff;
+      if (b >= 5000000) {
+        fee = 0;
+        tariff = '(бесплатно при бюджете от 5 млн ₽)';
+      } else if (b >= 500000) {
+        fee = Math.max(b * .05, 75000);
+        tariff = '(5%, минимум 75 000 ₽)';
+      } else {
+        fee = Math.max(b * .15, 50000);
+        tariff = '(15%, минимум 50 000 ₽)';
+      }
       document.getElementById('calcBudgetOut').textContent = fmt(b);
       document.getElementById('calcB').textContent = fmt(b);
-      document.getElementById('calcFee').textContent = fmt(Math.round(fee));
-      document.getElementById('calcTariff').textContent = senior ? '(5%, минимум 75 000 ₽)' : '(15%, минимум 50 000 ₽)';
+      document.getElementById('calcFee').textContent = fee === 0 ? 'бесплатно' : fmt(Math.round(fee));
+      document.getElementById('calcTariff').textContent = tariff;
       document.getElementById('calcTotal').textContent = fmt(Math.round(b + fee));
     };
     calcRange.addEventListener('input', upd);

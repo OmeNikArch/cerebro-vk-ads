@@ -3,8 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Церебро — реклама в VK: таргет VK Ads и посевы | Официальный партнёр VK</title>
-<meta name="description" content="Ведём таргетированную рекламу VK Ads и посевы на маркет-платформе. Официальный партнёр VK. 316+ млн ₽ открученного бюджета, кейсы с ROAS до 745%. Комиссия от 5%.">
+<title>Продвижение бизнеса в VK Ads и через посевы – Cerebro</title>
+<meta name="description" content="Таргетированная реклама и посевы во VK для маркетплейсов, локального бизнеса, сетей, брендов и B2B. Кейсы, прозрачная аналитика и понятная стоимость.">
+<link rel="canonical" href="https://omenikarch.github.io/cerebro-vk-ads/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://omenikarch.github.io/cerebro-vk-ads/">
+<meta property="og:title" content="Продвижение бизнеса в VK Ads и через посевы – Cerebro">
+<meta property="og:description" content="Таргетированная реклама и посевы во VK для маркетплейсов, локального бизнеса, сетей, брендов и B2B. Кейсы, прозрачная аналитика и понятная стоимость.">
+<meta property="og:image" content="https://omenikarch.github.io/cerebro-vk-ads/assets/logo-full.svg">
+<meta name="theme-color" content="#0C0C0D">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -16,7 +24,7 @@
     --line:#29292E;
     --ink:#F5F3EC;
     --ink-dim:#A3A3AB;
-    --ink-faint:#6E6E76;
+    --ink-faint:#83838D;
     --brand:#FDD101;
     --brand-ink:#0C0C0D;
     --display:'Unbounded',system-ui,sans-serif;
@@ -50,7 +58,7 @@
     background:rgba(12,12,13,.86);backdrop-filter:blur(12px);
     border-bottom:1px solid var(--line);
   }
-  .nav{display:flex;align-items:center;gap:32px;height:68px}
+  .nav{display:flex;align-items:center;gap:28px;height:68px}
   .logo{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
   .logo svg{width:34px;height:37px;flex:none}
   .logo b{font-family:var(--display);font-weight:500;font-size:17px;letter-spacing:.02em}
@@ -65,12 +73,13 @@
     transition:transform .15s ease,box-shadow .15s ease;
   }
   .btn:hover{transform:translateY(-1px);box-shadow:0 6px 24px rgba(253,209,1,.25)}
+  .btn:active{transform:translateY(0);box-shadow:none}
   .btn.small{padding:9px 18px;font-size:14px}
   .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
   .btn.ghost:hover{border-color:var(--brand);box-shadow:none;color:var(--brand)}
 
   /* ---------- герой ---------- */
-  .hero{padding:88px 0 64px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+  .hero{padding:80px 0 64px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
   .hero-badge{
     display:inline-flex;align-items:center;gap:8px;
     font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;
@@ -80,15 +89,15 @@
   .hero-badge::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--brand)}
   h1{
     font-family:var(--display);font-weight:500;
-    font-size:clamp(30px,4.6vw,54px);line-height:1.14;letter-spacing:-.01em;
-    max-width:16ch;
+    font-size:clamp(27px,3.9vw,46px);line-height:1.16;letter-spacing:-.01em;
+    max-width:26ch;
   }
   h1 em{font-style:normal;color:var(--brand)}
-  .hero-sub{max-width:52ch;color:var(--ink-dim);font-size:19px;margin:24px 0 36px}
+  .hero-sub{max-width:56ch;color:var(--ink-dim);font-size:19px;margin:24px 0 36px}
   .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:64px}
   .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
   .stat{padding:22px 24px 20px;background:var(--bg-raise)}
-  .stat b{font-family:var(--mono);font-weight:600;font-size:clamp(22px,2.4vw,30px);display:block;letter-spacing:-.02em}
+  .stat b{font-family:var(--mono);font-weight:600;font-size:clamp(21px,2.2vw,28px);display:block;letter-spacing:-.02em}
   .stat span{font-size:14px;color:var(--ink-dim);display:block;margin-top:6px;line-height:1.45}
 
   /* ---------- трастовая полоса ---------- */
@@ -99,53 +108,118 @@
   .trust a{color:var(--brand)}
 
   /* ---------- секции ---------- */
-  section{padding:88px 0}
+  section{padding:84px 0}
   .eyebrow{
     font-family:var(--mono);font-size:13px;letter-spacing:.12em;text-transform:uppercase;
     color:var(--brand);margin-bottom:16px;
   }
   h2{
     font-family:var(--display);font-weight:500;
-    font-size:clamp(24px,3.2vw,38px);line-height:1.2;letter-spacing:-.01em;
-    max-width:24ch;margin-bottom:18px;
+    font-size:clamp(23px,3vw,36px);line-height:1.22;letter-spacing:-.01em;
+    max-width:26ch;margin-bottom:18px;
   }
-  .lead{color:var(--ink-dim);max-width:60ch;font-size:18px}
+  .lead{color:var(--ink-dim);max-width:62ch;font-size:18px}
+
+  /* сегменты задач */
+  #tasks{border-bottom:1px solid var(--line)}
+  .seg-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:48px}
+  .seg{
+    background:var(--bg-card);border:1px solid var(--line);padding:28px 26px;
+    display:flex;flex-direction:column;gap:12px;cursor:pointer;
+    transition:border-color .15s ease,transform .15s ease;
+  }
+  .seg:hover{border-color:rgba(253,209,1,.55);transform:translateY(-2px)}
+  .seg h3{font-family:var(--display);font-weight:500;font-size:16.5px;line-height:1.32}
+  .seg .who{font-size:13.5px;color:var(--ink-faint)}
+  .seg ul{list-style:none;display:grid;gap:8px;flex:1;margin-top:2px}
+  .seg li{padding-left:18px;position:relative;font-size:14.5px;color:var(--ink-dim)}
+  .seg li::before{content:"–";position:absolute;left:0;color:var(--brand)}
+  .seg-link{font-weight:700;font-size:14.5px;color:var(--ink);text-decoration:none;margin-top:6px}
+  .seg:hover .seg-link,.seg-link:hover{color:var(--brand)}
+
+  /* подход: сравнительная таблица */
+  #approach{background:var(--bg-raise);border-bottom:1px solid var(--line)}
+  .cmp-scroll{margin-top:44px;overflow-x:auto;border:1px solid var(--line)}
+  .cmp{width:100%;border-collapse:collapse;min-width:620px;background:var(--bg-card)}
+  .cmp caption{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .cmp th{
+    font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--ink-faint);text-align:left;padding:14px 20px;border-bottom:1px solid var(--line);font-weight:600;
+  }
+  .cmp td{padding:14px 20px;border-bottom:1px solid var(--line);font-size:15px;color:var(--ink-dim);vertical-align:top}
+  .cmp tr:last-child td{border-bottom:none}
+  .cmp td:last-child{color:var(--ink);font-weight:600}
+  .cmp-note{margin-top:18px;font-size:14.5px;color:var(--ink-faint);max-width:72ch}
 
   /* услуги */
   .services{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:48px}
-  .service{background:var(--bg-card);padding:36px 34px;border:1px solid var(--line)}
-  .service h3{font-family:var(--display);font-weight:500;font-size:21px;margin-bottom:14px}
+  .service{background:var(--bg-card);padding:36px 34px;border:1px solid var(--line);display:flex;flex-direction:column}
+  .service h3{font-family:var(--display);font-weight:500;font-size:20px;margin-bottom:14px;line-height:1.3}
   .service p{color:var(--ink-dim);font-size:16px}
-  .service ul{list-style:none;margin-top:18px;display:grid;gap:9px}
+  .service ul{list-style:none;margin-top:18px;display:grid;gap:9px;flex:1}
   .service li{padding-left:22px;position:relative;font-size:15.5px;color:var(--ink-dim)}
-  .service li::before{content:"—";position:absolute;left:0;color:var(--brand)}
+  .service li::before{content:"–";position:absolute;left:0;color:var(--brand)}
   .service .tag{font-family:var(--mono);font-size:12px;color:var(--ink-faint);letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:20px}
+  .service .proof{margin-top:22px;padding-top:16px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-faint)}
+  .service .proof b{color:var(--ink-dim)}
 
   /* кейсы */
   #cases{background:var(--bg-raise);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .tabs{display:flex;gap:10px;margin:40px 0 28px}
-  .tab{
-    font-family:var(--body);font-weight:700;font-size:15px;cursor:pointer;
+  .filters{display:grid;gap:12px;margin:44px 0 10px}
+  .chiprow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .frole{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint);margin-right:4px;min-width:76px}
+  .chip{
+    font-family:var(--body);font-weight:600;font-size:14px;cursor:pointer;
     background:transparent;color:var(--ink-dim);border:1px solid var(--line);
-    padding:11px 22px;border-radius:100px;
+    padding:8px 16px;border-radius:100px;
+    transition:border-color .15s ease,color .15s ease,transform .1s ease;
   }
-  .tab[aria-selected="true"]{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
-  .cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .chip:hover{border-color:var(--brand);color:var(--ink)}
+  .chip:active{transform:scale(.97)}
+  .chip[aria-pressed="true"]{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
+  .budget-note{font-size:14px;color:var(--ink-faint);margin-bottom:8px;max-width:76ch}
+  .cases-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
   .case{
     background:var(--bg-card);border:1px solid var(--line);
-    padding:26px 24px 22px;display:flex;flex-direction:column;gap:12px;
+    padding:26px 24px 22px;display:flex;flex-direction:column;gap:11px;
     text-decoration:none;transition:border-color .15s ease,transform .15s ease;
   }
+  .case[hidden]{display:none}
   .case:hover{border-color:rgba(253,209,1,.55);transform:translateY(-2px)}
   .case .niche{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint)}
-  .case .metric{font-family:var(--mono);font-weight:600;font-size:24px;color:var(--brand);letter-spacing:-.02em}
-  .case p{font-size:14.5px;color:var(--ink-dim);flex:1}
+  .case .metric{font-family:var(--mono);font-weight:600;font-size:22px;color:var(--brand);letter-spacing:-.02em;line-height:1.25}
+  .case .fact{font-size:14px;color:var(--ink-dim);line-height:1.55}
+  .case .fact b{color:var(--ink);font-weight:700}
+  .case .meta{font-family:var(--mono);font-size:12px;color:var(--ink-faint);display:flex;flex-wrap:wrap;gap:4px 16px}
+  .case .src{font-size:12.5px;color:var(--ink-faint);border-top:1px solid var(--line);padding-top:10px;margin-top:auto;line-height:1.5}
   .case .more{font-size:14px;font-weight:700;color:var(--ink)}
   .case:hover .more{color:var(--brand)}
   .case.vk-official{border-color:rgba(253,209,1,.4)}
   .case .vk-mark{font-family:var(--mono);font-size:11.5px;color:var(--brand-ink);background:var(--brand);align-self:flex-start;padding:3px 10px;border-radius:3px;font-weight:600;letter-spacing:.04em}
-  .cases-note{margin-top:22px;font-size:14.5px;color:var(--ink-faint)}
+  .cases-actions{margin-top:30px;display:flex;justify-content:center}
+  .cases-empty{margin-top:26px;font-size:15.5px;color:var(--ink-dim);background:var(--bg-card);border:1px solid var(--line);padding:20px 24px;max-width:72ch}
+  .cases-note{margin-top:24px;font-size:14.5px;color:var(--ink-faint);max-width:80ch}
   .cases-note a{color:var(--ink-dim)}
+
+  /* как считаем результат */
+  .check-cols{display:grid;grid-template-columns:1fr 1fr;gap:12px 44px;margin-top:40px;max-width:920px;list-style:none}
+  .check-cols li{padding-left:26px;position:relative;font-size:15.5px;color:var(--ink-dim)}
+  .check-cols li::before{content:"✓";position:absolute;left:0;color:var(--brand);font-weight:700}
+  .smallprint{margin-top:26px;font-size:14.5px;color:var(--ink-faint);max-width:72ch}
+
+  /* этапы (тест, процесс) */
+  #test{background:var(--bg-raise);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:48px;counter-reset:st}
+  .step{background:var(--bg-card);border:1px solid var(--line);padding:22px 20px}
+  .step::before{
+    counter-increment:st;content:counter(st,decimal-leading-zero);
+    font-family:var(--mono);font-size:13px;color:var(--brand);display:block;margin-bottom:10px;
+  }
+  .step b{font-size:15.5px;display:block;margin-bottom:6px;line-height:1.4}
+  .step span{font-size:14px;color:var(--ink-dim);display:block}
+  .step span i{font-style:normal;color:var(--ink);font-weight:600}
+  .callout{margin-top:40px;border-left:3px solid var(--brand);background:var(--bg-card);padding:24px 28px;max-width:78ch}
+  .callout p{color:var(--ink);font-size:16.5px;font-weight:600;line-height:1.55}
 
   /* преимущества */
   .adv-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:48px}
@@ -158,6 +232,17 @@
   .adv.wide li::before{content:"✓";position:absolute;left:0;color:var(--brand);font-weight:700}
   .adv.wide li a{color:var(--ink)}
 
+  /* процесс */
+  #process{background:var(--bg-raise);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+  /* команда */
+  .flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:14px;align-items:stretch;margin-top:44px}
+  .role{background:var(--bg-card);border:1px solid var(--line);padding:26px 24px}
+  .role .rt{font-family:var(--display);font-weight:500;font-size:16px;display:block;margin-bottom:10px;line-height:1.35}
+  .role p{font-size:14.5px;color:var(--ink-dim)}
+  .flow .arr{align-self:center;color:var(--brand);font-family:var(--mono);font-size:22px}
+  .team-note{margin-top:24px;font-size:14.5px;color:var(--ink-faint);max-width:72ch}
+
   /* цены */
   .price-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:48px}
   .price{background:var(--bg-card);border:1px solid var(--line);padding:38px 34px}
@@ -167,12 +252,23 @@
   .price .min{margin-top:14px;color:var(--ink-dim);font-size:15.5px}
   .price ul{list-style:none;margin-top:24px;padding-top:24px;border-top:1px solid var(--line);display:grid;gap:9px}
   .price li{padding-left:22px;position:relative;font-size:15px;color:var(--ink-dim)}
-  .price li::before{content:"—";position:absolute;left:0;color:var(--brand)}
-  .price-note{margin-top:26px;font-size:15.5px;color:var(--ink-dim)}
+  .price li::before{content:"–";position:absolute;left:0;color:var(--brand)}
+  .price-note{margin-top:26px;font-size:15.5px;color:var(--ink-dim);max-width:72ch}
   .price-note b{color:var(--ink)}
+  .calc{margin-top:44px;background:var(--bg-card);border:1px solid var(--line);padding:32px 30px;max-width:680px}
+  .calc h3{font-family:var(--display);font-weight:500;font-size:18px;margin-bottom:8px}
+  .calc .hint{font-size:14.5px;color:var(--ink-dim);margin-bottom:20px}
+  .calc label{font-size:14px;font-weight:600;color:var(--ink-dim);display:block}
+  .calc input[type=range]{width:100%;accent-color:var(--brand);margin:16px 0 6px;cursor:pointer}
+  .calc-rows{display:grid;gap:10px;margin-top:20px;padding-top:20px;border-top:1px solid var(--line)}
+  .calc-row{display:flex;justify-content:space-between;gap:20px;font-size:15.5px;color:var(--ink-dim);flex-wrap:wrap}
+  .calc-row b{font-family:var(--mono);font-weight:600;white-space:nowrap}
+  .calc-row.total{color:var(--ink);font-size:17px}
+  .calc-row.total b{color:var(--brand)}
+  .calc-tariff{font-size:13px;color:var(--ink-faint)}
 
   /* FAQ */
-  .faq{max-width:820px;margin-top:44px}
+  .faq{max-width:860px;margin-top:44px}
   .faq details{border-bottom:1px solid var(--line)}
   .faq summary{
     cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:24px;align-items:baseline;
@@ -181,7 +277,7 @@
   .faq summary::-webkit-details-marker{display:none}
   .faq summary::after{content:"+";font-family:var(--mono);color:var(--brand);font-size:20px;flex:none}
   .faq details[open] summary::after{content:"−"}
-  .faq details p{padding:0 0 24px;color:var(--ink-dim);max-width:68ch;font-size:16px}
+  .faq details p{padding:0 0 24px;color:var(--ink-dim);max-width:70ch;font-size:16px}
 
   /* форма */
   #lead{background:var(--bg-raise);border-top:1px solid var(--line)}
@@ -194,13 +290,14 @@
     padding:13px 15px;width:100%;
   }
   input:focus,select:focus,textarea:focus{outline:none;border-color:var(--brand)}
-  textarea{resize:vertical;min-height:88px}
+  textarea{resize:vertical;min-height:80px}
   .consent{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;font-weight:400;color:var(--ink-faint)}
   .consent input{width:auto;margin-top:3px}
   .hp{position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden}
   .form-status{font-size:15px;display:none;padding:14px 16px;border-radius:4px}
   .form-status.ok{display:block;background:rgba(80,200,120,.12);color:#7fd99f}
   .form-status.err{display:block;background:rgba(240,90,90,.12);color:#f09a9a}
+  .form-promise{font-size:14px;color:var(--ink-faint);margin-top:2px}
 
   /* футер */
   footer{border-top:1px solid var(--line);padding:36px 0 44px}
@@ -214,22 +311,27 @@
   @media (prefers-reduced-motion:reduce){
     html{scroll-behavior:auto}
     .rv{opacity:1;transform:none;transition:none}
-    .btn{transition:none}
+    .btn,.chip,.case,.seg{transition:none}
   }
 
   /* адаптив */
   @media (max-width:980px){
     .stats{grid-template-columns:repeat(2,1fr)}
     .cases-grid{grid-template-columns:1fr 1fr}
+    .seg-grid{grid-template-columns:1fr 1fr}
+    .steps{grid-template-columns:1fr 1fr}
     .lead-split{grid-template-columns:1fr;gap:40px}
+    .flow{grid-template-columns:1fr}
+    .flow .arr{transform:rotate(90deg);justify-self:center}
   }
   @media (max-width:680px){
     .nav a.nl{display:none}
-    section{padding:64px 0}
-    .hero{padding:56px 0 48px}
-    .services,.adv-grid,.price-grid,.cases-grid{grid-template-columns:1fr}
+    section{padding:60px 0}
+    .hero{padding:52px 0 48px}
+    .services,.adv-grid,.price-grid,.cases-grid,.seg-grid,.steps{grid-template-columns:1fr}
     .adv.wide{grid-template-columns:1fr}
     .stats{gap:12px}
+    .frole{min-width:100%}
   }
 </style>
 </head>
@@ -237,18 +339,19 @@
 
 <header>
   <div class="wrap nav">
-    <a class="logo" href="#top" aria-label="Церебро — на главную">
+    <a class="logo" href="#top" aria-label="Церебро – на главную">
       <svg viewBox="0 0 727.256 791" aria-hidden="true">
         <path fill="#FDD101" d="M86.8343,87.4846H640.422V703.515H86.8343V87.4846ZM0,0V791H727.256V0H0Z"/>
         <path fill="#F5F3EC" d="M471.024,640.077l78.452-62.647v-136.052h-74.34V174.653h-86.676V441.062h-103.283V174.811h-86.834v353.893H471.024v111.373Z"/>
       </svg>
       <b>церебро<span>таргет · посевы · VK</span></b>
     </a>
-    <a class="nl" href="#cases">Кейсы</a>
+    <a class="nl" href="#tasks">Задачи</a>
     <a class="nl" href="#services">Услуги</a>
+    <a class="nl" href="#cases">Кейсы</a>
     <a class="nl" href="#pricing">Цены</a>
     <a class="nl" href="#faq">Вопросы</a>
-    <a class="btn small" href="#lead">Обсудить проект</a>
+    <a class="btn small" href="#lead">Получить разбор</a>
   </div>
 </header>
 
@@ -258,17 +361,17 @@
   <section class="hero">
     <div class="wrap">
       <p class="hero-badge">Официальный партнёр VK Рекламы</p>
-      <h1>Приводим клиентов из VK. <em>Цифрами</em>, а не обещаниями.</h1>
-      <p class="hero-sub">Таргет VK Ads и посевы на маркет-платформе — под ключ: стратегия, креативы, ведение и отчётность, где виден каждый рубль. Селлерам, локальным сетям и брендам.</p>
+      <h1>Продажи, заявки и целевые действия из VK – <em>с экономикой, которую можно проверить</em></h1>
+      <p class="hero-sub">Таргетированная реклама и посевы одной командой. Подбираем канал под задачу, контролируем стоимость результата и показываем, куда ушёл каждый рубль.</p>
       <div class="hero-cta">
-        <a class="btn" href="#lead">Обсудить проект</a>
-        <a class="btn ghost" href="#cases">Смотреть кейсы</a>
+        <a class="btn" href="#lead">Получить разбор проекта</a>
+        <a class="btn ghost" href="#tasks">Посмотреть кейсы в моей нише</a>
       </div>
       <div class="stats">
-        <div class="stat cbr rv"><b>316+ млн ₽</b><span>открученного бюджета на товарных проектах за 2 года</span></div>
+        <div class="stat cbr rv"><b>316+ млн ₽</b><span>рекламного бюджета за 2 года на товарных проектах</span></div>
         <div class="stat cbr rv"><b>420 млн</b><span>охвата за год в посевах для одного бренда</span></div>
-        <div class="stat cbr rv"><b>до 745%</b><span>ROAS на связках для селлера WB и Ozon</span></div>
-        <div class="stat cbr rv"><b>2+ года</b><span>ведём проекты, которые начинались с теста</span></div>
+        <div class="stat cbr rv"><b>2+ года</b><span>ведём проекты, которые начинались с ограниченного теста</span></div>
+        <div class="stat cbr rv"><b>Партнёр VK</b><span>официальный статус: участвуем в развитии рекламной платформы</span></div>
       </div>
     </div>
   </section>
@@ -276,37 +379,124 @@
   <!-- ТРАСТ -->
   <div class="trust">
     <div class="wrap">
-      <p><b>VK опубликовал наш кейс</b> в топе платформы AdBlogger — мы первыми показали на ней результат. <a href="https://adblogger.vk.ru/top-cases/case-6" target="_blank" rel="noopener">Смотреть на adblogger.vk.ru →</a></p>
+      <p><b>VK опубликовал наш кейс</b> в топе платформы AdBlogger – мы первыми показали на ней результат. <a href="https://adblogger.vk.ru/top-cases/case-6" target="_blank" rel="noopener">Смотреть на adblogger.vk.ru →</a></p>
       <p><b>Вместе с VK улучшаем рекламный кабинет:</b> по нашей инициативе в VK Рекламу вернулся формат «универсальная запись».</p>
     </div>
   </div>
+
+  <!-- СЕГМЕНТАЦИЯ ПО ЗАДАЧАМ -->
+  <section id="tasks">
+    <div class="wrap">
+      <p class="eyebrow">С чем приходят</p>
+      <h2>Какая задача стоит перед вами</h2>
+      <p class="lead">Выберите свою – покажем, как решаем её, и кейсы с такими же задачами.</p>
+      <div class="seg-grid">
+        <article class="seg rv">
+          <h3>Продажи на маркетплейсах</h3>
+          <p class="who">Для продавцов на Wildberries и Ozon</p>
+          <ul>
+            <li>приводим внешний трафик на карточки</li>
+            <li>считаем стоимость продажи и ДРР</li>
+            <li>тестируем товары, офферы и креативы</li>
+            <li>масштабируем только связки с рабочей экономикой</li>
+          </ul>
+          <a class="seg-link" href="#cases" data-settask="mp">Кейсы маркетплейсов →</a>
+        </article>
+        <article class="seg rv">
+          <h3>Заявки для локального бизнеса</h3>
+          <p class="who">Для клиник, автошкол, недвижимости, мероприятий и услуг</p>
+          <ul>
+            <li>показываем рекламу в нужной географии</li>
+            <li>работаем с конкретными филиалами</li>
+            <li>контролируем стоимость обращения</li>
+            <li>сверяем количество лидов с их качеством</li>
+          </ul>
+          <a class="seg-link" href="#cases" data-settask="local">Кейсы локального бизнеса →</a>
+        </article>
+        <article class="seg rv">
+          <h3>Продвижение бренда</h3>
+          <p class="who">Для охвата, узнаваемости, трафика и формирования спроса</p>
+          <ul>
+            <li>масштабный охват по понятной стоимости</li>
+            <li>размещение в релевантных сообществах</li>
+            <li>контроль частоты и качества площадок</li>
+            <li>сочетание таргета и посевов</li>
+          </ul>
+          <a class="seg-link" href="#cases" data-settask="brand">Кейсы брендов →</a>
+        </article>
+        <article class="seg rv">
+          <h3>B2B-продвижение</h3>
+          <p class="who">Для сложных продуктов и длинного цикла сделки</p>
+          <ul>
+            <li>сегментация профессиональных аудиторий</li>
+            <li>тестирование офферов</li>
+            <li>оценка не только количества, но и качества обращений</li>
+            <li>сверка с CRM при наличии данных</li>
+          </ul>
+          <a class="seg-link" href="#cases" data-settask="b2b">Кейсы B2B →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ГЛАВНОЕ ОТЛИЧИЕ -->
+  <section id="approach">
+    <div class="wrap">
+      <p class="eyebrow">Главное отличие</p>
+      <h2>Подбираем канал под задачу, а не продаём то, что умеем</h2>
+      <p class="lead">В одних проектах лучше работает таргетированная реклама, в других – посевы в сообществах. Иногда максимальный результат даёт сочетание двух инструментов. Мы начинаем с задачи и экономики бизнеса, а не с заранее выбранного рекламного канала.</p>
+      <div class="cmp-scroll rv">
+        <table class="cmp">
+          <caption>Какой инструмент чаще подходит под какую задачу</caption>
+          <thead>
+            <tr><th scope="col">Задача</th><th scope="col">Что чаще срабатывает</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Заявки в конкретном городе</td><td>чаще VK Ads</td></tr>
+            <tr><td>Продвижение сети филиалов</td><td>VK Ads с точной географией</td></tr>
+            <tr><td>Недорогой массовый товар</td><td>посевы или сочетание каналов</td></tr>
+            <tr><td>Тестирование офферов и аудиторий</td><td>VK Ads</td></tr>
+            <tr><td>Большой недорогой охват</td><td>посевы</td></tr>
+            <tr><td>Нестабильность одного инструмента</td><td>перенос бюджета или комбинированная схема</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="cmp-note">Это не универсальные правила. Итоговый выбор делаем после анализа продукта, аудитории, бюджета и воронки.</p>
+    </div>
+  </section>
 
   <!-- УСЛУГИ -->
   <section id="services">
     <div class="wrap">
       <p class="eyebrow">Что делаем</p>
-      <h2>Два канала VK — одна команда</h2>
-      <p class="lead">Работаем и с таргетированной рекламой, и с посевами. Подбираем канал под задачу, а не продаём то, что умеем.</p>
+      <h2>Два канала VK – одна команда</h2>
+      <p class="lead">Не перечень работ, а результат: находим связки с рабочей экономикой и масштабируем их, отключая всё, что не окупается.</p>
       <div class="services">
         <article class="service rv">
-          <span class="tag">Канал 01</span>
-          <h3>Таргет VK Ads</h3>
-          <p>Лиды, подписчики, продажи на маркетплейсах и заявки для локального бизнеса — из нового кабинета VK Рекламы.</p>
+          <span class="tag">Канал 01 · Таргет VK Ads</span>
+          <h3>Точный управляемый трафик</h3>
+          <p>Когда важна цена конкретного результата: заявки, продажи, целевого действия.</p>
           <ul>
-            <li>стратегия, аудитории, креативы, ведение</li>
-            <li>гео-точность: собственный софт расставляет сотни геометок под филиалы</li>
-            <li>работа в KPI ниши: цена лида, подписчика, заказа</li>
+            <li>тестируем аудитории и предложения, чтобы найти рабочие связки</li>
+            <li>управляем географией вплоть до отдельных филиалов</li>
+            <li>отключаем неэффективные объявления и перераспределяем бюджет</li>
+            <li>контролируем стоимость заявки, продажи или другого целевого действия</li>
+            <li>готовим креативы сами – не перекладываем рекламное производство на клиента</li>
           </ul>
+          <p class="proof"><b>Пример из кейса:</b> 823 точные геометки вместо широкого гео – заявка для автодилера подешевела в 3,5 раза. Показываем рекламу тем, кому удобно доехать, а не всем подряд.</p>
         </article>
         <article class="service rv">
-          <span class="tag">Канал 02</span>
-          <h3>Посевы: маркет-платформа и AdBlogger</h3>
-          <p>Дешёвый масштабируемый охват в сообществах ВК — трафик на карточки WB и Ozon, который окупается даже при чеке 400–800 ₽.</p>
+          <span class="tag">Канал 02 · Посевы: маркет-платформа и AdBlogger</span>
+          <h3>Масштабный охват и продажи через сообщества VK</h3>
+          <p>Когда нужен большой недорогой охват – в том числе для товаров с чеком 400–800 ₽.</p>
           <ul>
-            <li>закупка охватов по CPM до 100 ₽</li>
-            <li>сотни размещений в месяц, креативы, которые не выгорают месяцами</li>
-            <li>опыт миграции между площадками без потери результата</li>
+            <li>подбираем сообщества по аудитории и результативности, а не только по размеру</li>
+            <li>распределяем бюджет между большим количеством размещений – без зависимости от одной площадки</li>
+            <li>отключаем сообщества, которые не дают целевых переходов</li>
+            <li>масштабируем удачные форматы</li>
+            <li>можем перенести кампанию между инструментами VK, если меняется экономика</li>
           </ul>
+          <p class="proof"><b>Пример из кейса:</b> 420 млн охвата и 2,9 млн переходов на карточки WB и Ozon за год для бренда бытовой химии – бюджет посевов вырос в 10 раз.</p>
         </article>
       </div>
     </div>
@@ -319,170 +509,329 @@
       <h2>Кейсы с цифрами, а не со звёздочками</h2>
       <p class="lead">Каждая карточка ведёт на полный разбор в блоге: скрины кабинетов, креативы, ход мысли. Часть абсолютных цифр скрыта по NDA клиентов.</p>
 
-      <div class="tabs" role="tablist" aria-label="Тип кейсов">
-        <button class="tab" role="tab" aria-selected="true" aria-controls="grid-target" id="tab-target">Таргет VK Ads — 13</button>
-        <button class="tab" role="tab" aria-selected="false" aria-controls="grid-seed" id="tab-seed">Посевы — 6</button>
+      <div class="filters">
+        <div class="chiprow" role="group" aria-label="Фильтр кейсов по задаче">
+          <span class="frole">Задача</span>
+          <button class="chip" data-ftask="all" aria-pressed="true">Все</button>
+          <button class="chip" data-ftask="mp" aria-pressed="false">Маркетплейсы</button>
+          <button class="chip" data-ftask="local" aria-pressed="false">Локальный бизнес</button>
+          <button class="chip" data-ftask="net" aria-pressed="false">Сети и филиалы</button>
+          <button class="chip" data-ftask="brand" aria-pressed="false">Бренды и охват</button>
+          <button class="chip" data-ftask="b2b" aria-pressed="false">B2B</button>
+        </div>
+        <div class="chiprow" role="group" aria-label="Фильтр кейсов по бюджету">
+          <span class="frole">Бюджет</span>
+          <button class="chip" data-fbudget="all" aria-pressed="true">Любой</button>
+          <button class="chip" data-fbudget="b1" aria-pressed="false">до 100 тыс. ₽</button>
+          <button class="chip" data-fbudget="b2" aria-pressed="false">100–500 тыс. ₽</button>
+          <button class="chip" data-fbudget="b3" aria-pressed="false">от 500 тыс. ₽</button>
+        </div>
       </div>
+      <p class="budget-note" id="budgetNote" hidden>В бюджетные категории попадают только кейсы с опубликованным бюджетом. Бюджеты большинства проектов закрыты NDA – их не относим ни к одной категории.</p>
 
-      <div class="cases-grid" id="grid-target" role="tabpanel" aria-labelledby="tab-target">
-        <a class="case vk-official rv" href="https://adblogger.vk.ru/top-cases/case-6" target="_blank" rel="noopener">
+      <div class="cases-grid" id="casesGrid">
+
+        <a class="case vk-official rv" data-featured data-task="mp" href="https://adblogger.vk.ru/top-cases/case-6" target="_blank" rel="noopener">
           <span class="vk-mark">Топ-кейс VK</span>
           <span class="niche">Косметика · WB и Ozon</span>
           <span class="metric">35 продаж в день</span>
-          <p>Официальный кейс на платформе VK: стоимость заказа ниже на 40%, корзина — на 43%. Кампанию вела команда Церебро.</p>
+          <span class="fact"><b>Задача:</b> продажи на маркетплейсах за счёт внешнего трафика из VK.</span>
+          <span class="fact"><b>Сделали:</b> вели кампании на маркет-платформе; стоимость заказа снизили на 40%, корзины – на 43%.</span>
+          <span class="src">Источник: кейс опубликован VK на платформе AdBlogger.</span>
           <span class="more">Читать кейс →</span>
         </a>
-        <a class="case rv" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-adblogger-i-vk-ads-6800-prodazh-dlya-magazina-kosmetiki-na-wb-i-ozon" target="_blank" rel="noopener">
+
+        <a class="case rv" data-featured data-task="mp" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-adblogger-i-vk-ads-6800-prodazh-dlya-magazina-kosmetiki-na-wb-i-ozon" target="_blank" rel="noopener">
           <span class="niche">Селлер · WB и Ozon</span>
-          <span class="metric">6 800+ продаж</span>
-          <p>Нашли связки с ДРР 14% и ROAS 745%, ведя трафик из ВК прямо на маркетплейсы. Переход по 7–8 ₽.</p>
+          <span class="metric">6 800+ продаж, ROAS до 745%</span>
+          <span class="fact"><b>Задача:</b> внешний трафик на карточки WB и Ozon с рабочей экономикой.</span>
+          <span class="fact"><b>Сделали:</b> нашли связки с ДРР 14% и переходом по 7–8 ₽, масштабировали только их.</span>
+          <span class="src">ROAS – по данным атрибуции; у внешнего трафика на маркетплейсы есть ограничения. Лучший результат отдельного проекта: итог зависит от продукта, бюджета, предложения и готовности воронки.</span>
           <span class="more">Читать кейс →</span>
         </a>
-        <a class="case rv" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-ads-kokoshniki-patriotka-okupaemost-350-v-techenie-goda" target="_blank" rel="noopener">
-          <span class="niche">Аксессуары ручной работы</span>
-          <span class="metric">Окупаемость 350%</span>
-          <p>Товар в 4 раза дороже рынка стабильно окупается весь год: 10 323 целевых действия по 104 ₽.</p>
+
+        <a class="case rv" data-featured data-task="brand mp" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-mp-grass-byt-himia" target="_blank" rel="noopener">
+          <span class="niche">Посевы · Бытовая химия · WB и Ozon</span>
+          <span class="metric">420 млн охвата за год</span>
+          <span class="fact"><b>Задача:</b> массовый охват и переходы на карточки для недорогого товара.</span>
+          <span class="fact"><b>Сделали:</b> 2,9 млн переходов на маркетплейсы; бренд масштабировал бюджет посевов в 10 раз.</span>
+          <span class="meta"><span>Период: год</span></span>
+          <span class="src">Охват и переходы – рекламный кабинет. Атрибуция продаж на маркетплейсах имеет ограничения.</span>
           <span class="more">Читать кейс →</span>
         </a>
-        <a class="case rv" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs_avtodilera_iz_vologdy" target="_blank" rel="noopener">
+
+        <a class="case rv" data-featured data-task="local" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs_avtodilera_iz_vologdy" target="_blank" rel="noopener">
           <span class="niche">Автодилер · Вологда</span>
-          <span class="metric">CPL ↓ в 3,5 раза</span>
-          <p>Снизили стоимость заявки с 9 836 до 2 787 ₽ и вошли в KPI ниши — сменой офферов и расширением гео на 823 метки.</p>
+          <span class="metric">Заявка дешевле в 3,5 раза</span>
+          <span class="fact"><b>Задача:</b> заявки в KPI ниши в конкретном регионе.</span>
+          <span class="fact"><b>Сделали:</b> сменили офферы и расширили гео на 823 точные метки; заявка подешевела с 9 836 до 2 787 ₽.</span>
+          <span class="src">Источник: рекламный кабинет. Результат – заявки, не продажи.</span>
           <span class="more">Читать кейс →</span>
         </a>
-        <a class="case rv" href="https://blog.xn--90aha1bhc1b.xn--p1ai/prodvizhenie-brenda-uhodovyh-sredstv-lugovoj-buket" target="_blank" rel="noopener">
+
+        <a class="case rv" data-featured data-task="net local" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-ads-prodvizhenie-kvestov-v-krasnodare" target="_blank" rel="noopener">
+          <span class="niche">Сеть квестов · Краснодар</span>
+          <span class="metric">3 года ведения, 6 городов</span>
+          <span class="fact"><b>Задача:</b> брони для сети хоррор-квестов и масштабирование франшизы.</span>
+          <span class="fact"><b>Сделали:</b> подписчик по 43 ₽, рост бронирований до 50%, масштабирование на 6 городов франшизы.</span>
+          <span class="meta"><span>Период: 3 года</span></span>
+          <span class="src">Подписчики – рекламный кабинет; брони – данные клиента.</span>
+          <span class="more">Читать кейс →</span>
+        </a>
+
+        <a class="case rv" data-featured data-task="b2b" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs_vk_ads_reklama_onlajn_magazina_suvenirshik" target="_blank" rel="noopener">
+          <span class="niche">B2B · оборудование</span>
+          <span class="metric">Заявка 345 ₽ при KPI до 1 200 ₽</span>
+          <span class="fact"><b>Задача:</b> B2B-обращения по цене в рамках KPI.</span>
+          <span class="fact"><b>Сделали:</b> стабильно ~100 заявок в месяц втрое дешевле KPI клиента.</span>
+          <span class="src">Источник: рекламный кабинет. Результат – заявки, не продажи.</span>
+          <span class="more">Читать кейс →</span>
+        </a>
+
+        <a class="case rv" data-featured data-task="local" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-ads-prodvizhenie-himchistki-kovrov-v-spb" target="_blank" rel="noopener">
+          <span class="niche">Химчистка ковров · СПб</span>
+          <span class="metric">Выручка +87% за год</span>
+          <span class="fact"><b>Задача:</b> заявки и рост выручки локальной услуги.</span>
+          <span class="fact"><b>Сделали:</b> 5 790 подписчиков по 97 ₽, цена подписки снизилась на 55%; клиент нанял третьего водителя.</span>
+          <span class="meta"><span>Период: год</span></span>
+          <span class="src">Подписчики – рекламный кабинет; выручка – данные клиента.</span>
+          <span class="more">Читать кейс →</span>
+        </a>
+
+        <a class="case rv" data-featured data-budget="b1" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-ads-prodvizhenie-mebeli-ruchnoj-raboty" target="_blank" rel="noopener">
+          <span class="niche">Мебель ручной работы</span>
+          <span class="metric">21 заявка за 9 дней теста</span>
+          <span class="fact"><b>Задача:</b> проверить спрос на мебель с чеком до 153 тыс. ₽ ограниченным тестом.</span>
+          <span class="fact"><b>Сделали:</b> тест без слитого бюджета – нашли 3 рабочие связки для масштабирования.</span>
+          <span class="meta"><span>Период: 9 дней</span><span>Бюджет: 50 000 ₽</span></span>
+          <span class="src">Источник: рекламный кабинет. Результат – заявки, не продажи.</span>
+          <span class="more">Читать кейс →</span>
+        </a>
+
+        <a class="case rv" data-task="mp" href="https://blog.xn--90aha1bhc1b.xn--p1ai/prodvizhenie-brenda-uhodovyh-sredstv-lugovoj-buket" target="_blank" rel="noopener">
           <span class="niche">Уходовая косметика · Ozon</span>
           <span class="metric">Продажи ×11</span>
-          <p>Смена рекламной площадки за несколько дней: корзина в 9,5 раза дешевле, товар раскупили со склада раньше срока.</p>
+          <span class="fact"><b>Задача:</b> восстановить продажи при смене рекламной площадки.</span>
+          <span class="fact"><b>Сделали:</b> перенесли кампании за несколько дней; корзина в 9,5 раза дешевле, товар раскупили со склада раньше срока.</span>
+          <span class="src">Источник результата указан в полном описании кейса.</span>
           <span class="more">Читать кейс →</span>
         </a>
-        <a class="case rv" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-ads-prodvizhenie-himchistki-kovrov-v-spb" target="_blank" rel="noopener">
-          <span class="niche">Химчистка ковров · СПб</span>
-          <span class="metric">Выручка +87%</span>
-          <p>5 790 подписчиков по 97 ₽ за год, цена подписки −55%. Клиент нанял третьего водителя.</p>
-          <span class="more">Читать кейс →</span>
-        </a>
-        <a class="case rv" href="https://blog.xn--90aha1bhc1b.xn--p1ai/statya-univer-zapis-collaba" target="_blank" rel="noopener">
-          <span class="niche">Коллаборация с VK</span>
+
+        <a class="case rv" data-task="mp" href="https://blog.xn--90aha1bhc1b.xn--p1ai/statya-univer-zapis-collaba" target="_blank" rel="noopener">
+          <span class="niche">Коллаборация с VK · селлеры</span>
           <span class="metric">ROMI 231%</span>
-          <p>Вместе с командой VK вернули селлерам формат «универсальная запись»: конверсия в корзину 40% против −88% ROMI у каруселей.</p>
+          <span class="fact"><b>Задача:</b> вернуть селлерам работающий формат в VK Рекламе.</span>
+          <span class="fact"><b>Сделали:</b> вместе с командой VK вернули «универсальную запись»: конверсия в корзину 40% против отрицательного ROMI у каруселей.</span>
+          <span class="src">Источник результата указан в полном описании кейса.</span>
           <span class="more">Читать кейс →</span>
         </a>
-        <a class="case rv" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs_vk_ads_reklama_onlajn_magazina_suvenirshik" target="_blank" rel="noopener">
-          <span class="niche">B2B · оборудование</span>
-          <span class="metric">Лид 345 ₽</span>
-          <p>KPI был до 1 000–1 200 ₽ — получаем горячие B2B-обращения втрое дешевле, стабильно ~100 заявок в месяц.</p>
+
+        <a class="case rv" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-ads-kokoshniki-patriotka-okupaemost-350-v-techenie-goda" target="_blank" rel="noopener">
+          <span class="niche">Аксессуары ручной работы</span>
+          <span class="metric">Окупаемость 350% весь год</span>
+          <span class="fact"><b>Задача:</b> стабильно продавать товар в 4 раза дороже рынка.</span>
+          <span class="fact"><b>Сделали:</b> 10 323 целевых действия по 104 ₽; связки работают круглый год.</span>
+          <span class="meta"><span>Период: год</span></span>
+          <span class="src">Источник результата указан в полном описании кейса.</span>
           <span class="more">Читать кейс →</span>
         </a>
-        <a class="case rv" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-ads-prodvizhenie-magazina-tkanej-uvelichili-vyruchku-na-21-procent" target="_blank" rel="noopener">
+
+        <a class="case rv" data-task="local" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-ads-prodvizhenie-magazina-tkanej-uvelichili-vyruchku-na-21-procent" target="_blank" rel="noopener">
           <span class="niche">Магазин тканей · Ижевск</span>
           <span class="metric">Выручка +21%</span>
-          <p>8 277 подписчиков в рассылку по 37,5 ₽ при KPI до 50 ₽ — и рост заказов на 32% через 4 месяца.</p>
+          <span class="fact"><b>Задача:</b> подписчики в рассылку не дороже 50 ₽ и рост заказов.</span>
+          <span class="fact"><b>Сделали:</b> 8 277 подписчиков по 37,5 ₽; заказы выросли на 32% через 4 месяца.</span>
+          <span class="meta"><span>Период: 4 месяца</span></span>
+          <span class="src">Подписчики – рекламный кабинет; выручка – данные клиента.</span>
           <span class="more">Читать кейс →</span>
         </a>
-        <a class="case rv" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-boombate-skidki-v-restorany10198-podpischikov-po-43-rub" target="_blank" rel="noopener">
+
+        <a class="case rv" data-task="local" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-boombate-skidki-v-restorany10198-podpischikov-po-43-rub" target="_blank" rel="noopener">
           <span class="niche">Сервис скидок · СПб</span>
           <span class="metric">10 198 подписчиков по 43 ₽</span>
-          <p>Каждый третий кликнувший подписывается. Стабильный прирост 1 300–2 400 подписчиков в месяц, 8 месяцев подряд.</p>
+          <span class="fact"><b>Задача:</b> стабильный приток подписчиков в сообщество сервиса.</span>
+          <span class="fact"><b>Сделали:</b> подписывается каждый третий кликнувший; прирост 1 300–2 400 подписчиков в месяц, 8 месяцев подряд.</span>
+          <span class="meta"><span>Период: 8 месяцев</span></span>
+          <span class="src">Источник: рекламный кабинет. Результат – подписчики, не продажи.</span>
           <span class="more">Читать кейс →</span>
         </a>
-        <a class="case rv" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-ads-prodvizhenie-kvestov-v-krasnodare" target="_blank" rel="noopener">
-          <span class="niche">Квесты · Краснодар</span>
-          <span class="metric">Подписчик 43 ₽</span>
-          <p>Три года ведём сеть хоррор-квестов: рост бронирований до 50% и масштабирование на 6 городов франшизы.</p>
-          <span class="more">Читать кейс →</span>
-        </a>
-        <a class="case rv" href="https://blog.xn--90aha1bhc1b.xn--p1ai/1000-podpischikov-v-mesyac-iz-mikro-auditorii-obemom-26000-chelovek-v-krasnodare" target="_blank" rel="noopener">
+
+        <a class="case rv" data-task="local" href="https://blog.xn--90aha1bhc1b.xn--p1ai/1000-podpischikov-v-mesyac-iz-mikro-auditorii-obemom-26000-chelovek-v-krasnodare" target="_blank" rel="noopener">
           <span class="niche">Развлечения · микро-гео</span>
-          <span class="metric">1 000+ подписчиков/мес</span>
-          <p>Аудитория всего 26 тыс. человек — а подписчик по 45 ₽, вдвое дешевле KPI клиента.</p>
+          <span class="metric">1 000+ подписчиков в месяц</span>
+          <span class="fact"><b>Задача:</b> расти на аудитории всего в 26 тыс. человек.</span>
+          <span class="fact"><b>Сделали:</b> подписчик по 45 ₽ – вдвое дешевле KPI клиента, без выгорания микро-аудитории.</span>
+          <span class="src">Источник: рекламный кабинет. Результат – подписчики, не продажи.</span>
           <span class="more">Читать кейс →</span>
         </a>
-        <a class="case rv" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-ads-prodvizhenie-mebeli-ruchnoj-raboty" target="_blank" rel="noopener">
-          <span class="niche">Мебель ручной работы</span>
-          <span class="metric">21 заявка за 9 дней</span>
-          <p>Честный тест на 50 000 ₽: заявки на мебель с чеком до 153 тыс. ₽ и 3 рабочие связки вместо слитого бюджета.</p>
-          <span class="more">Читать кейс →</span>
-        </a>
-      </div>
 
-      <div class="cases-grid" id="grid-seed" role="tabpanel" aria-labelledby="tab-seed" hidden>
-        <a class="case rv" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-mp-grass-byt-himia" target="_blank" rel="noopener">
-          <span class="niche">Бытовая химия · WB и Ozon</span>
-          <span class="metric">420 млн охвата за год</span>
-          <p>2,9 млн переходов на маркетплейсы: бренд масштабировал бюджет посевов в 10 раз и вышел на окупаемость X4.</p>
-          <span class="more">Читать кейс →</span>
-        </a>
-        <a class="case rv" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-mp-grass-auto" target="_blank" rel="noopener">
-          <span class="niche">Автохимия · WB и Ozon</span>
+        <a class="case rv" data-task="brand mp" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-mp-grass-auto" target="_blank" rel="noopener">
+          <span class="niche">Посевы · Автохимия · WB и Ozon</span>
           <span class="metric">1,7 млн кликов за 2 года</span>
-          <p>275 млн охвата по CPM до 100 ₽ — товар раскупали до опустошения складов, один креатив не выгорал 1,5 года.</p>
+          <span class="fact"><b>Задача:</b> постоянный поток недорогих переходов на карточки.</span>
+          <span class="fact"><b>Сделали:</b> 275 млн охвата по CPM до 100 ₽; один креатив работал без выгорания 1,5 года.</span>
+          <span class="meta"><span>Период: 2 года</span></span>
+          <span class="src">Источник: рекламный кабинет. Результат – клики и охват, не продажи.</span>
           <span class="more">Читать кейс →</span>
         </a>
-        <a class="case rv" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-mp-prodvizheniye-brenda-kosmetiki-na-vajldberriz" target="_blank" rel="noopener">
-          <span class="niche">Косметика · Wildberries</span>
-          <span class="metric">5 500+ продаж за 8 мес</span>
-          <p>3,85 млн ₽ выручки: подняли бренд с 10 до 30+ продаж в день, клик от 4 ₽. Клиент вырастил бюджет в 4 раза.</p>
+
+        <a class="case rv" data-task="mp" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-mp-prodvizheniye-brenda-kosmetiki-na-vajldberriz" target="_blank" rel="noopener">
+          <span class="niche">Посевы · Косметика · Wildberries</span>
+          <span class="metric">5 500+ продаж за 8 месяцев</span>
+          <span class="fact"><b>Задача:</b> рост продаж карточек бренда на WB.</span>
+          <span class="fact"><b>Сделали:</b> подняли бренд с 10 до 30+ продаж в день при клике от 4 ₽; клиент вырастил бюджет в 4 раза.</span>
+          <span class="meta"><span>Период: 8 месяцев</span></span>
+          <span class="src">Атрибуция внешнего трафика на маркетплейсы имеет ограничения; детали – в полном описании кейса.</span>
           <span class="more">Читать кейс →</span>
         </a>
-        <a class="case rv" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-mp-grass-cosmetika" target="_blank" rel="noopener">
-          <span class="niche">Косметика и гигиена · WB и Ozon</span>
-          <span class="metric">80 000+ кликов/мес</span>
-          <p>Два года подряд: 20+ млн охвата ежемесячно и окупаемость X4 при чеке товара 400–800 ₽.</p>
+
+        <a class="case rv" data-task="brand mp" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-mp-grass-cosmetika" target="_blank" rel="noopener">
+          <span class="niche">Посевы · Косметика и гигиена · WB и Ozon</span>
+          <span class="metric">80 000+ кликов в месяц</span>
+          <span class="fact"><b>Задача:</b> стабильный масштабный трафик для товаров с чеком 400–800 ₽.</span>
+          <span class="fact"><b>Сделали:</b> 20+ млн охвата ежемесячно на протяжении двух лет.</span>
+          <span class="meta"><span>Период: 2 года</span></span>
+          <span class="src">Источник: рекламный кабинет. Результат – клики и охват, не продажи.</span>
           <span class="more">Читать кейс →</span>
         </a>
-        <a class="case rv" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-mp-srazhenie-s-algoritmami-vk" target="_blank" rel="noopener">
+
+        <a class="case rv" data-task="mp" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-mp-srazhenie-s-algoritmami-vk" target="_blank" rel="noopener">
           <span class="niche">Косметика для волос · WB</span>
-          <span class="metric">Клик по 8 ₽</span>
-          <p>Алгоритмы ВК сломали посевы — оперативно перевели селлера в таргет и вышли на KPI. Клиент вернулся с бюджетом ×5.</p>
+          <span class="metric">Клик по 8 ₽ после смены канала</span>
+          <span class="fact"><b>Задача:</b> сохранить результат, когда посевы перестали работать.</span>
+          <span class="fact"><b>Сделали:</b> оперативно перевели бюджет в таргет и вернулись в KPI; клиент вернулся с бюджетом в 5 раз больше.</span>
+          <span class="src">Источник: рекламный кабинет.</span>
           <span class="more">Читать кейс →</span>
         </a>
-        <a class="case rv" href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-mp-how-to-save-budgets" target="_blank" rel="noopener">
-          <span class="niche">Методика</span>
-          <span class="metric">Экономия бюджета</span>
-          <p>Как мы бережём бюджеты клиентов в посевах: разбор подхода в блоге.</p>
-          <span class="more">Читать кейс →</span>
-        </a>
+
       </div>
 
-      <p class="cases-note">Больше разборов — в <a href="https://blog.xn--90aha1bhc1b.xn--p1ai" target="_blank" rel="noopener">блоге Церебро</a>.</p>
+      <p class="cases-empty" id="casesEmpty" hidden>По этому сочетанию фильтров опубликованных кейсов нет. На первой встрече покажем детали по проектам, релевантным вашей нише, – часть портфеля закрыта NDA.</p>
+
+      <div class="cases-actions">
+        <button class="btn ghost" id="showAllBtn" type="button">Посмотреть все кейсы</button>
+      </div>
+
+      <p class="cases-note">Как бережём бюджеты клиентов в посевах – <a href="https://blog.xn--90aha1bhc1b.xn--p1ai/kejs-vk-mp-how-to-save-budgets" target="_blank" rel="noopener">разбор подхода</a>. Больше разборов – в <a href="https://blog.xn--90aha1bhc1b.xn--p1ai" target="_blank" rel="noopener">блоге Церебро</a>.</p>
     </div>
   </section>
 
-  <!-- ПРЕИМУЩЕСТВА -->
+  <!-- КАК СЧИТАЕМ РЕЗУЛЬТАТ -->
+  <section id="metrics">
+    <div class="wrap">
+      <p class="eyebrow">Как считаем результат</p>
+      <h2>Не ограничиваемся красивыми цифрами рекламного кабинета</h2>
+      <p class="lead">До запуска определяем, какую метрику считаем основной: продажу, заявку, квалифицированное обращение, переход, подписку, охват или другую цель. По возможности сверяем данные VK с CRM, аналитикой сайта, телефонией, статистикой маркетплейса и фактическими оплатами.</p>
+      <ul class="check-cols rv">
+        <li>фиксируем основную метрику до запуска</li>
+        <li>не смешиваем клики, лиды и продажи</li>
+        <li>показываем рекламные расходы</li>
+        <li>указываем источник результата</li>
+        <li>учитываем ограничения атрибуции</li>
+        <li>не выдаём предварительный сигнал за подтверждённую закономерность</li>
+      </ul>
+      <p class="smallprint">Глубина сверки зависит от доступов и данных, которые может предоставить клиент.</p>
+    </div>
+  </section>
+
+  <!-- КАК ПРОХОДИТ ТЕСТ -->
+  <section id="test">
+    <div class="wrap">
+      <p class="eyebrow">Тест</p>
+      <h2>Тест должен дать решение, а не просто потратить бюджет</h2>
+      <div class="steps">
+        <div class="step rv"><b>Анализ</b><span>продукта, предложения и воронки</span></div>
+        <div class="step rv"><b>Гипотезы</b><span>формулируем, что и почему должно сработать</span></div>
+        <div class="step rv"><b>Метрика</b><span>определяем основную метрику результата</span></div>
+        <div class="step rv"><b>Бюджет и период</b><span>согласовываем рамки теста</span></div>
+        <div class="step rv"><b>Запуск</b><span>кампании выходят в открутку</span></div>
+        <div class="step rv"><b>Отключение слабого</b><span>убираем связки, которые не сходятся</span></div>
+        <div class="step rv"><b>Решение</b><span>масштабируем успешные связки или фиксируем отрицательный результат</span></div>
+      </div>
+      <div class="callout rv">
+        <p>Мы не обещаем, что каждый тест станет успешным. Мы стремимся сделать так, чтобы он дал проверяемый вывод. Если экономика не сходится, не продолжаем тратить бюджет ради красивого отчёта.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ПОЧЕМУ С НАМИ СПОКОЙНО -->
   <section id="advantages">
     <div class="wrap">
       <p class="eyebrow">Почему с нами спокойно</p>
-      <h2>Работаем как для себя — и это проверяемо</h2>
+      <h2>Проект не приходится контролировать вместо подрядчика</h2>
       <div class="adv-grid">
         <article class="adv rv">
-          <h3>Прозрачность до рубля</h3>
-          <p>Все этапы работы открыты: отчётность показывает, куда и на что потрачен каждый рубль бюджета. Никаких «магических» цифр — вы видите то же, что и мы.</p>
+          <h3>Проект не зависит от одного специалиста</h3>
+          <p>У специалиста есть наставник, который знает задачи проекта, проверяет динамику и может подключиться к работе. Если специалист выбывает, наставник ведёт проект, пока вводится новый, – без месяца «на вникание».</p>
         </article>
         <article class="adv rv">
-          <h3>Проект не завязан на одного человека</h3>
-          <p>За каждым таргетологом закреплён наставник — специалист высокой категории, который в курсе всех деталей проекта. Если спец выпал — замена бесшовная: новый не тратит месяц на «вникание», а на время ввода проект ведёт сам наставник.</p>
+          <h3>Показываем, что происходит с бюджетом</h3>
+          <p>Клиент видит расходы, результаты, запущенные гипотезы и следующие действия команды.</p>
         </article>
         <article class="adv rv">
-          <h3>Нас не нужно «допинывать»</h3>
-          <p>Сами предлагаем идеи и быстро реагируем на изменения в кабинете: вовремя перепройдём модерацию, напомним о пополнении, скорректируем кампании и отключим неэффективные — до того, как вы спросите.</p>
+          <h3>Сообщаем о проблемах сами</h3>
+          <p>Если стоимость результата растёт или гипотеза не подтверждается, не ждём вопроса клиента и предлагаем решение.</p>
         </article>
         <article class="adv rv">
-          <h3>Настроены вдолгую</h3>
-          <p>Есть проекты, которые мы ведём больше двух лет. Не берём клиента «ради доп. проекта» — начинаем работу, только если понимаем, что принесём бизнесу пользу.</p>
+          <h3>Умеем работать долго</h3>
+          <p>Часть клиентов остаётся с нами более двух лет – не из-за долгого договора, а потому что продвижение продолжает решать их задачи.</p>
         </article>
         <article class="adv wide rv">
           <div>
-            <h3>Официальный партнёр VK</h3>
-            <p>Мы не просто размещаем рекламу в VK — мы участвуем в развитии самой платформы.</p>
+            <h3>Работаем с платформой профессионально</h3>
+            <p>Статус партнёра VK помогает глубже понимать инструменты платформы и быстрее разбираться в изменениях.</p>
           </div>
           <ul>
-            <li>вместе с командой VK доработали рекламный кабинет — <a href="https://blog.xn--90aha1bhc1b.xn--p1ai/statya-univer-zapis-collaba" target="_blank" rel="noopener">вернули селлерам «универсальную запись»</a></li>
-            <li>VK опубликовал наш кейс <a href="https://adblogger.vk.ru/top-cases/case-6" target="_blank" rel="noopener">в топе платформы AdBlogger</a> — мы первыми показали на ней сильный результат</li>
-            <li>наши специалисты работали в поддержке рекламного кабинета VK — знаем его изнутри</li>
+            <li>вместе с командой VK доработали рекламный кабинет – <a href="https://blog.xn--90aha1bhc1b.xn--p1ai/statya-univer-zapis-collaba" target="_blank" rel="noopener">вернули селлерам «универсальную запись»</a></li>
+            <li>VK опубликовал наш кейс <a href="https://adblogger.vk.ru/top-cases/case-6" target="_blank" rel="noopener">в топе платформы AdBlogger</a> – мы первыми показали на ней сильный результат</li>
+            <li>наши специалисты работали в поддержке рекламного кабинета VK – знаем его изнутри</li>
           </ul>
         </article>
       </div>
+    </div>
+  </section>
+
+  <!-- ПРОЦЕСС -->
+  <section id="process">
+    <div class="wrap">
+      <p class="eyebrow">Процесс</p>
+      <h2>Как начинается и развивается работа</h2>
+      <p class="lead">На каждом этапе у клиента появляется конкретный результат – не «работа ведётся», а понятный вывод или материал.</p>
+      <div class="steps">
+        <div class="step rv"><b>Заявка и диагностика</b><span><i>Вы получаете:</i> понимание, подходит ли VK для задачи</span></div>
+        <div class="step rv"><b>Встреча и сбор данных</b><span><i>Вы получаете:</i> список нужных доступов и первые гипотезы</span></div>
+        <div class="step rv"><b>Метрика и инструмент</b><span><i>Вы получаете:</i> зафиксированную метрику результата и канал теста</span></div>
+        <div class="step rv"><b>Стратегия и материалы</b><span><i>Вы получаете:</i> согласованные гипотезы, бюджет и креативы</span></div>
+        <div class="step rv"><b>Запуск</b><span><i>Вы получаете:</i> работающие кампании и настроенный учёт результата</span></div>
+        <div class="step rv"><b>Сбор данных</b><span><i>Вы получаете:</i> объём статистики, достаточный для выводов</span></div>
+        <div class="step rv"><b>Оптимизация</b><span><i>Вы получаете:</i> отключённые слабые связки и перераспределённый бюджет</span></div>
+        <div class="step rv"><b>Решение о масштабировании</b><span><i>Вы получаете:</i> план роста или честную фиксацию отрицательного результата</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- КОМАНДА -->
+  <section id="team">
+    <div class="wrap">
+      <p class="eyebrow">Команда</p>
+      <h2>Кто отвечает за ваш проект</h2>
+      <div class="flow rv">
+        <div class="role cbr">
+          <span class="rt">Руководитель направления</span>
+          <p>Отвечает за стратегию направления и подход к проектам.</p>
+        </div>
+        <span class="arr" aria-hidden="true">→</span>
+        <div class="role">
+          <span class="rt">Наставник</span>
+          <p>Проверяет экономику и развитие проектов, контролирует качество ведения, подключается к работе при необходимости.</p>
+        </div>
+        <span class="arr" aria-hidden="true">→</span>
+        <div class="role">
+          <span class="rt">Специалист проекта</span>
+          <p>Запускает и оптимизирует кампании, готовит креативы и отчётность.</p>
+        </div>
+      </div>
+      <p class="team-note">Каждый проект ведёт связка «специалист + наставник»: решения по вашему проекту не зависят от одного человека.</p>
     </div>
   </section>
 
@@ -490,7 +839,7 @@
   <section id="pricing">
     <div class="wrap">
       <p class="eyebrow">Стоимость</p>
-      <h2>Комиссия от бюджета. Чем больше бюджет — тем ниже процент</h2>
+      <h2>Комиссия от бюджета: чем больше бюджет – тем ниже процент</h2>
       <div class="price-grid">
         <article class="price cbr rv">
           <p class="cond">Рекламный бюджет до 500 000 ₽/мес</p>
@@ -508,12 +857,24 @@
           <p class="min">от бюджета, но не менее 75 000 ₽</p>
           <ul>
             <li>всё то же, что и на младшем тарифе</li>
-            <li>приоритет наставника на проекте</li>
             <li>масштабирование на города и площадки</li>
           </ul>
         </article>
       </div>
-      <p class="price-note">Минимальный рекламный бюджет для старта — <b>50 000 ₽ в месяц</b>. Точный план и прогноз обсуждаем на первом созвоне.</p>
+
+      <div class="calc cbr rv">
+        <h3>Сколько это стоит целиком</h3>
+        <p class="hint">Подвиньте ползунок – посчитаем полную сумму инвестиций в месяц: бюджет плюс работа команды.</p>
+        <label for="calcRange">Рекламный бюджет в месяц: <b id="calcBudgetOut">150 000 ₽</b></label>
+        <input type="range" id="calcRange" min="50000" max="2000000" step="10000" value="150000" aria-describedby="calcTariff">
+        <div class="calc-rows">
+          <div class="calc-row"><span>Рекламный бюджет</span><b id="calcB">150 000 ₽</b></div>
+          <div class="calc-row"><span>Работа команды <span class="calc-tariff" id="calcTariff">(15%, минимум 50 000 ₽)</span></span><b id="calcFee">50 000 ₽</b></div>
+          <div class="calc-row total"><span>Итого в месяц</span><b id="calcTotal">200 000 ₽</b></div>
+        </div>
+      </div>
+
+      <p class="price-note">Даже небольшой проект требует анализа, стратегии, подготовки креативов, запуска, аналитики и контроля – поэтому у работы команды есть минимальная стоимость. Минимальный рекламный бюджет для старта – <b>50 000 ₽ в месяц</b>. Точный состав работ и возможные дополнительные расходы фиксируем до заключения договора.</p>
     </div>
   </section>
 
@@ -524,24 +885,44 @@
       <h2>Коротко о главном</h2>
       <div class="faq">
         <details class="rv">
+          <summary>Вы гарантируете продажи?</summary>
+          <p>Нет. На итог влияют продукт, цена, предложение, посадочная страница, наличие товара, работа отдела продаж и другие элементы воронки. Мы отвечаем за качество рекламной работы, прозрачность бюджета, проверку гипотез и своевременную оптимизацию.</p>
+        </details>
+        <details class="rv">
+          <summary>Как понять, подходит ли VK моему бизнесу?</summary>
+          <p>Зависит от аудитории, продукта, географии, экономики и объёма доступного бюджета: одному бизнесу нужен точный таргет по городу, другому – массовый охват, третьему VK не подойдёт вовсе. Для этого и существует предварительный разбор: смотрим задачу и честно говорим, видим ли путь к результату.</p>
+        </details>
+        <details class="rv">
+          <summary>Что будет, если тест не сработает?</summary>
+          <p>Разберём данные, покажем, какие гипотезы проверены, почему результат не сошёлся и есть ли основания для нового теста. Не предлагаем бесконечно продолжать кампанию без понятной причины.</p>
+        </details>
+        <details class="rv">
+          <summary>Как вы считаете продажи на маркетплейсах?</summary>
+          <p>Используем доступные данные: рекламный кабинет VK, статистику маркетплейса и данные клиента. Прямой сквозной атрибуции внешнего трафика у маркетплейсов нет, поэтому у любых расчётов есть ограничения – мы говорим о них прямо, фиксируем метод оценки до запуска и не выдаём оценку за точное знание.</p>
+        </details>
+        <details class="rv">
+          <summary>Кто ведёт проект?</summary>
+          <p>Связка «специалист + наставник». Специалист запускает и оптимизирует кампании, готовит креативы и отчётность. Наставник знает задачи проекта, проверяет динамику и может подключиться к работе. Над ними – руководитель направления, который отвечает за стратегию.</p>
+        </details>
+        <details class="rv">
+          <summary>Что требуется от клиента?</summary>
+          <p>Доступы к рекламному кабинету, сообществу и аналитике; данные о продукте, экономике и ограничениях; материалы о продукте, если они есть; согласование офферов и креативов; обратная связь по качеству заявок – без неё нельзя сверить количество лидов с их качеством.</p>
+        </details>
+        <details class="rv">
           <summary>С кем вы работаете?</summary>
-          <p>С селлерами маркетплейсов и e-commerce, локальными бизнесами с филиалами по городам — клиниками, студиями лазерной эпиляции, развлекательными проектами, — а также с брендами и B2B. Смотрим не на нишу, а на то, сможем ли принести пользу.</p>
+          <p>С селлерами маркетплейсов и e-commerce, локальными бизнесами с филиалами по городам – клиниками, студиями лазерной эпиляции, развлекательными проектами, – а также с брендами и B2B. Смотрим не на нишу, а на то, сможем ли принести пользу.</p>
         </details>
         <details class="rv">
           <summary>А с кем не работаете?</summary>
-          <p>Не берём проекты из ряда тем: банкротство, ставки, криптовалюта, эзотерика, инфобизнес, «розыгрышные» механики продаж и некоторые другие ниши по внутреннему комплаенсу. Если сомневаетесь — спросите, ответим честно на первом созвоне.</p>
-        </details>
-        <details class="rv">
-          <summary>Что входит в ведение?</summary>
-          <p>Стратегия и медиаплан, сбор аудиторий, креативы, запуск и ежедневное ведение кампаний, тесты связок, регулярная отчётность и созвоны. По посевам — подбор сообществ, закупка размещений и контроль открутки.</p>
+          <p>Не берём проекты из ряда тем: банкротство, ставки, криптовалюта, эзотерика, инфобизнес, «розыгрышные» механики продаж и некоторые другие ниши по внутреннему комплаенсу. Если сомневаетесь – спросите, ответим честно на первой встрече.</p>
         </details>
         <details class="rv">
           <summary>Почему в кейсах не все цифры?</summary>
-          <p>Часть абсолютных значений — бюджеты, продажи, точный CPC — закрыта NDA с клиентами. Всё, что опубликовано, взято из рекламных кабинетов; на созвоне покажем больше деталей по релевантным вашей нише проектам.</p>
+          <p>Часть абсолютных значений – бюджеты, продажи, точный CPC – закрыта NDA с клиентами. На встрече покажем больше деталей по релевантным вашей нише проектам.</p>
         </details>
         <details class="rv">
           <summary>Как быстро запустимся?</summary>
-          <p>После брифа и доступа к кабинету собираем стратегию и первые креативы, затем запускаем тест. Первые данные для решений появляются уже в первые 1–2 недели открутки — как в кейсе мебели: 21 заявка за 9 дней теста.</p>
+          <p>После брифа и доступа к кабинету собираем стратегию и первые креативы, затем запускаем тест. Первые данные для решений обычно появляются в первые 1–2 недели открутки – как в кейсе мебели: 21 заявка за 9 дней теста.</p>
         </details>
       </div>
     </div>
@@ -552,17 +933,30 @@
     <div class="wrap lead-split">
       <div>
         <p class="eyebrow">Заявка</p>
-        <h2>Обсудим ваш проект</h2>
-        <p class="lead">Оставьте контакты — зададим несколько вопросов о задаче, покажем релевантные кейсы и предложим план с прогнозом. Без «продажи в лоб».</p>
+        <h2>Получите предварительный разбор проекта</h2>
+        <p class="lead">На первой встрече определим, подходит ли VK для вашей задачи, какой канал логичнее протестировать, какой бюджет нужен для получения значимых данных и какую метрику считать результатом.</p>
       </div>
       <form id="leadForm" novalidate>
         <label>Как вас зовут
           <input type="text" name="name" autocomplete="name" required maxlength="100" placeholder="Имя">
         </label>
-        <label>Телефон
-          <input type="tel" name="phone" autocomplete="tel" required inputmode="tel" placeholder="+7 900 000-00-00">
+        <label>Телефон или Telegram
+          <input type="text" name="contact" autocomplete="tel" required maxlength="100" placeholder="+7 900 000-00-00 или @username">
         </label>
-        <label>Рекламный бюджет в месяц
+        <label>Ссылка на сайт, карточку товара или сообщество
+          <input type="text" name="link" maxlength="300" placeholder="https://…">
+        </label>
+        <label>Основная задача
+          <select name="task">
+            <option value="Продажи на маркетплейсах">Продажи на маркетплейсах (WB, Ozon)</option>
+            <option value="Заявки для локального бизнеса">Заявки для локального бизнеса</option>
+            <option value="Продвижение сети или филиалов">Продвижение сети или филиалов</option>
+            <option value="Охват и узнаваемость бренда">Охват и узнаваемость бренда</option>
+            <option value="B2B-обращения">B2B-обращения</option>
+            <option value="Другое">Другое / пока не знаю</option>
+          </select>
+        </label>
+        <label>Предполагаемый рекламный бюджет в месяц
           <select name="budget">
             <option value="50–150 тыс. ₽">50–150 тыс. ₽</option>
             <option value="150–500 тыс. ₽">150–500 тыс. ₽</option>
@@ -570,15 +964,16 @@
             <option value="Пока не знаю">Пока не знаю</option>
           </select>
         </label>
-        <label>О проекте
-          <textarea name="comment" maxlength="1000" placeholder="Ниша, ссылка на сообщество или магазин, задача"></textarea>
+        <label>Комментарий
+          <textarea name="comment" maxlength="1000" placeholder="Ниша, текущая ситуация, что уже пробовали"></textarea>
         </label>
         <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
         <label class="consent">
           <input type="checkbox" name="consent" required>
           <span>Согласен(на) на обработку персональных данных</span>
         </label>
-        <button class="btn" type="submit">Отправить заявку</button>
+        <button class="btn" type="submit">Получить разбор проекта</button>
+        <p class="form-promise">Если не увидим реалистичного пути к результату, скажем об этом до начала работы.</p>
         <p class="form-status" id="formStatus" role="status"></p>
       </form>
     </div>
@@ -620,9 +1015,12 @@
     if (form.company.value) return; // honeypot: боты заполняют скрытое поле
 
     const name = form.name.value.trim();
-    const phone = form.phone.value.replace(/[^\d+]/g, '');
-    if (!name || phone.replace(/\D/g,'').length < 10) {
-      setStatus('err', 'Проверьте имя и телефон — телефон должен содержать не менее 10 цифр.');
+    const contact = form.contact.value.trim();
+    const digits = contact.replace(/\D/g, '');
+    const isPhone = digits.length >= 10;
+    const isTelegram = /^@[A-Za-z0-9_]{3,}$/.test(contact) || /t\.me\//i.test(contact);
+    if (!name || (!isPhone && !isTelegram)) {
+      setStatus('err', 'Проверьте имя и контакт: телефон должен содержать не менее 10 цифр, Telegram – начинаться с @ (например, @username).');
       return;
     }
     if (!form.consent.checked) {
@@ -630,7 +1028,7 @@
       return;
     }
     if (!BITRIX_WEBHOOK_URL) {
-      setStatus('err', 'Форма ещё не подключена к CRM. Напишите нам напрямую — контакты в подвале страницы.');
+      setStatus('err', 'Форма ещё не подключена к CRM. Напишите нам напрямую – контакты в подвале страницы.');
       return;
     }
 
@@ -638,10 +1036,16 @@
     const params = new URLSearchParams();
     params.set('fields[TITLE]', 'Лендинг VK Ads: заявка от ' + name);
     params.set('fields[NAME]', name);
-    params.set('fields[PHONE][0][VALUE]', phone);
-    params.set('fields[PHONE][0][VALUE_TYPE]', 'WORK');
+    if (isPhone) {
+      params.set('fields[PHONE][0][VALUE]', contact.replace(/[^\d+]/g, ''));
+      params.set('fields[PHONE][0][VALUE_TYPE]', 'WORK');
+    }
     params.set('fields[COMMENTS]',
-      'Бюджет: ' + form.budget.value + '\n' + (form.comment.value.trim() || '—'));
+      'Контакт: ' + contact +
+      '\nЗадача: ' + form.task.value +
+      '\nБюджет: ' + form.budget.value +
+      '\nСсылка: ' + (form.link.value.trim() || '–') +
+      '\nКомментарий: ' + (form.comment.value.trim() || '–'));
     params.set('fields[SOURCE_ID]', 'WEB');
     params.set('fields[SOURCE_DESCRIPTION]', 'vk-ads-landing');
     ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(k => {
@@ -659,7 +1063,7 @@
       const data = await res.json();
       if (data.result) {
         form.reset();
-        setStatus('ok', 'Заявка отправлена. Свяжемся с вами в ближайшее время.');
+        setStatus('ok', 'Заявка отправлена. Свяжемся с вами, чтобы назначить разбор.');
       } else {
         throw new Error(data.error_description || 'unknown');
       }
@@ -670,17 +1074,86 @@
     }
   });
 
-  // табы кейсов
-  const tabs = document.querySelectorAll('.tab');
-  tabs.forEach(tab => tab.addEventListener('click', () => {
-    tabs.forEach(t => {
-      const on = t === tab;
-      t.setAttribute('aria-selected', on);
-      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
-    });
-  }));
+  // ---------- фильтры кейсов ----------
+  const taskChips = document.querySelectorAll('.chip[data-ftask]');
+  const budgetChips = document.querySelectorAll('.chip[data-fbudget]');
+  const cards = document.querySelectorAll('#casesGrid .case');
+  const showAllBtn = document.getElementById('showAllBtn');
+  const emptyEl = document.getElementById('casesEmpty');
+  const budgetNote = document.getElementById('budgetNote');
+  let taskF = 'all', budgetF = 'all', expanded = false;
 
-  // появление при скролле
+  function pressChip(group, active){
+    group.forEach(c => c.setAttribute('aria-pressed', String(c === active)));
+  }
+
+  function applyFilters(){
+    const filtering = taskF !== 'all' || budgetF !== 'all';
+    let visible = 0;
+    cards.forEach(card => {
+      const tasks = (card.dataset.task || '').split(' ');
+      const okTask = taskF === 'all' || tasks.includes(taskF);
+      const okBudget = budgetF === 'all' || card.dataset.budget === budgetF;
+      let show = okTask && okBudget;
+      if (!filtering && !expanded) show = card.hasAttribute('data-featured');
+      card.hidden = !show;
+      if (show) visible++;
+    });
+    emptyEl.hidden = visible > 0;
+    budgetNote.hidden = budgetF === 'all';
+    showAllBtn.hidden = filtering || expanded;
+  }
+
+  taskChips.forEach(chip => chip.addEventListener('click', () => {
+    taskF = chip.dataset.ftask;
+    pressChip(taskChips, chip);
+    applyFilters();
+  }));
+  budgetChips.forEach(chip => chip.addEventListener('click', () => {
+    budgetF = chip.dataset.fbudget;
+    pressChip(budgetChips, chip);
+    applyFilters();
+  }));
+  showAllBtn.addEventListener('click', () => { expanded = true; applyFilters(); });
+
+  // клик по сегменту задач ведёт к отфильтрованным кейсам
+  document.querySelectorAll('[data-settask]').forEach(link => {
+    link.addEventListener('click', () => {
+      const t = link.dataset.settask;
+      taskF = t;
+      taskChips.forEach(c => c.setAttribute('aria-pressed', String(c.dataset.ftask === t)));
+      applyFilters();
+    });
+  });
+  // вся карточка сегмента кликабельна (ссылка внутри остаётся для клавиатуры)
+  document.querySelectorAll('.seg').forEach(card => {
+    card.addEventListener('click', e => {
+      if (e.target.closest('a')) return;
+      card.querySelector('.seg-link').click();
+    });
+  });
+
+  applyFilters();
+
+  // ---------- калькулятор стоимости ----------
+  const calcRange = document.getElementById('calcRange');
+  if (calcRange) {
+    const fmt = n => n.toLocaleString('ru-RU') + ' ₽';
+    const upd = () => {
+      const b = +calcRange.value;
+      const senior = b >= 500000;
+      const fee = senior ? Math.max(b * .05, 75000) : Math.max(b * .15, 50000);
+      document.getElementById('calcBudgetOut').textContent = fmt(b);
+      document.getElementById('calcB').textContent = fmt(b);
+      document.getElementById('calcFee').textContent = fmt(Math.round(fee));
+      document.getElementById('calcTariff').textContent = senior ? '(5%, минимум 75 000 ₽)' : '(15%, минимум 50 000 ₽)';
+      document.getElementById('calcTotal').textContent = fmt(Math.round(b + fee));
+    };
+    calcRange.addEventListener('input', upd);
+    upd();
+  }
+
+  // ---------- появление при скролле ----------
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (!reduce && 'IntersectionObserver' in window) {
     const io = new IntersectionObserver(entries => {
